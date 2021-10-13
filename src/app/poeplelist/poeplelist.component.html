@@ -1,1 +1,49 @@
-<p>poeplelist works!</p>
+ <app-navbar></app-navbar>
+ <div class="container">
+   <h1>liste</h1>
+   <button class="btn btn-warning" [routerLink]="['/add-users']">add</button>
+  <div  class="alert alert-warning  row row-table" *ngIf="poeplelist.length === 0"> <p>Not people found</p> </div>
+  <div class="row row-table">
+    <table div class="table table-principale " *ngIf="poeplelist.length !== 0">
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>firstname</th>
+          <th>lastname</th>
+          <th>Phone</th>
+          <th>#</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let p of poeplelist; let i = index">
+
+           <td>{{i+1}}</td>
+           <td>{{p.firstname}}</td>
+           <td>{{p.lastname}}</td>
+           <td>{{p.phone}}</td>
+
+
+
+
+
+
+
+
+
+
+          <td>
+            <button  class="btn btn-info" >Details</button>
+            <button  class="btn btn-danger">Delete</button>
+            <button class="btn btn-warning" routerLink="['update-users/',1]">Update</button>
+
+          </td>
+        </tr>
+      </tbody>
+
+     </table>
+  </div>
+
+
+
+</div>

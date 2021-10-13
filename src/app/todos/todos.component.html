@@ -1,0 +1,36 @@
+<app-navbar></app-navbar>
+
+<div class="container position-table">
+  <div class="row row-table">
+    <table div class="table table-principale ">
+      <thead class="thead-fixed">
+        <tr>
+          <td>userId</td>
+          <td>id</td>
+          <td>title</td>
+          <td>completed</td>
+
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let todo of todos">
+
+           <td>{{todo.userId}}</td>
+           <td>{{todo.id}}</td>
+           <td>{{todo.title}}</td>
+           <td>{{todo.completed}}</td>
+
+          <td>
+            <button  class="btn btn-info" >Details</button>
+            <button  class="btn btn-danger">Delete</button>
+            <button class="btn btn-warning" >Update</button>
+
+          </td>
+        </tr>
+      </tbody>
+
+     </table>
+</div>
+
+<app-footer></app-footer>

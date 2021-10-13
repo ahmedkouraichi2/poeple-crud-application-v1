@@ -1,0 +1,31 @@
+.dispo-center{
+  display: flex;
+  align-items: center;
+  margin-top: 200px;
+  margin-left:200px;
+}
+
+.row-main-not-found{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+#not-found-text{
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+.taque-me-home-conatact{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+
+
+}
+.taque-me-home-conatact .button-taque{
+  margin-left: 50px;
+  background-color: darkblue;
+  border-radius: 10px;
+}

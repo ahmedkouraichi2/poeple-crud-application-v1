@@ -1,1 +1,67 @@
-<p>register works!</p>
+<app-navbar></app-navbar>
+<div class="container my-5">
+  <div class="row row-main">
+     <div class="col">
+        <form [formGroup]="registerForm">
+            <div class="form-row">
+               <div class="form-group col-6">
+                  <label>firstName:</label>
+                  <input type="text" id="firstName" name="firstName" class="form-control" formControlName="firstname"/>
+
+               </div>
+               <div class="form-group col-6">
+                 <label>lastName:</label>
+                 <input type="text " #lastName  id="lastName" name="lastName" class="form-control" formControlName="lastname">
+                 <small>{{errorReapssword}}</small>""
+
+
+
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-6">
+                 <label>Email adress:</label>
+                 <div>
+                  <input type="text" id="firstName" name="firstName" class="form-control" formControlName="email"/>
+                  <i class="fa fa-book"></i>
+
+                </div>
+
+              </div>
+              <div class="form-group col-6">
+                <label>Phone:</label>
+                <input type="text "  id="lastName" name="lastName" class="form-control" formControlName="phone">
+
+
+
+             </div>
+           </div>
+
+
+           <div class="form-row">
+            <div class="form-group col-6">
+               <label>Password:</label>
+               <input type="text" id="password" name="password" class="form-control" formControlName="password"/>
+
+            </div>
+            <div class="form-group col-6">
+              <label>Repassword:</label>
+              <input type="text "  id="repassword" name="repassword" class="form-control" formControlName="repassword">
+             <small *ngIf=""></small>
+
+
+            </div>
+
+
+         </div>
+
+         <div class="btn-register m-5">
+          <button class="btn btn-info " (click)="register()">Register</button>
+       </div>
+
+        </form>
+     </div>
+  </div>
+</div>
+<app-footer></app-footer>
